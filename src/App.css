@@ -1,0 +1,26 @@
+body {
+  font-family: 
+}
+.App {
+  text-align: center;
+  background: url('https://images.squarespace-cdn.com/content/v1/57e82f41f5e23123e59c66ef/1558736594063-131GZH9N90C4UN67XMKC/ke17ZwdGBToddI8pDm48kOxq7JwFdX-CJiUhVAhKCBwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcR49rFmqW3Qm3DWeVdIYyjrwDw5jJnpgiY5sKk4pfMR4BNv37NfmUu4UozZ-y8Hm4/mars-short-read-overlay1.jpg?format=1500w') no-repeat center;
+  height: 100vh;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: rgb(218, 108, 6);
+  border-radius: 0 0 50% 50%;
+  transform: scale(1.5);
+}
+.App-header img {
+  width: 10%;
+  height: auto;
+  display: flex;
+  padding-top: 2em;
+}
