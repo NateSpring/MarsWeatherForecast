@@ -22,6 +22,7 @@ class App extends Component {
       .then(res => res.json())
       .then(res => {
         var i = res["sol_keys"][6];
+        var obj = res[i].WD;
         console.log(res);
 
         this.setState({ date: res[i].Last_UTC.slice(0, 10) })
@@ -29,7 +30,7 @@ class App extends Component {
         this.setState({ tempLo: res[i].AT.mn });
         this.setState({ season: res[i].Season });
         this.setState({ windspeed: res[i].HWS.av });
-        this.setState({ WD: res[i].WD[0].compass_point })
+        this.setState({ WD: res[i].WD[Object.keys(obj)[0]].compass_point })
       });
   }
 
