@@ -29,8 +29,8 @@ class App extends Component {
         var windObj = res[i].WD;
 
         console.log(res);
-        console.log(i-1);
-//Setting state for each parameter to be displayed.
+        console.log(`Data from Sol Day: ` + i);
+        //Setting state for each parameter to be displayed.
         this.setState({ date: res[i].First_UTC.slice(0, 10) })
         this.setState({ tempHi: res[i].AT.mx });
         this.setState({ tempLo: res[i].AT.mn });
@@ -68,10 +68,15 @@ class App extends Component {
             <h1>InSight Lander</h1>
             <p>
               The Interior Exploration using Seismic Investigations, Geodesy and Heat Transport (InSight) mission is a robotic lander designed to study the deep interior of the planet Mars. It was manufactured by Lockheed Martin, is managed by NASA's Jet Propulsion Laboratory, and most of its scientific instruments were built by European agencies. The mission launched on 5 May 2018 at 11:05 UTC aboard an Atlas V-401 rocket and successfully landed at Elysium Planitia on Mars on 26 November 2018 at 19:52:59 UTC. InSight traveled 483 million km (300 million mi) during its journey.
+
               </p>
           </div>
-
         </div>
+
+        <div className="dailypicture">
+          <h1>Raw Image Collection:</h1>
+        </div>
+
       </div>
     );
   }
